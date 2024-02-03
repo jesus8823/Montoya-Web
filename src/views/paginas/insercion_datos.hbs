@@ -1,0 +1,56 @@
+
+
+
+<form action="/insercion/tecnologias" method="POST">
+	<h3>tecnologias agregar</h3>
+	<input type="text" name="nombre" placeholder="tecnologia">
+	<input type="text" name="tipo" placeholder="tipo de tecnologia">
+	<input type="text" name="rango" placeholder="grado de conocimientos">
+	<input type="submit" name="">
+
+</form>
+
+<form action="/insercion/categorias" method="POST">
+	<h3>categotias agregar</h3>
+	<input type="text" name="nombre">
+	<input type="submit" name="">
+
+</form>
+
+<form action="/insercion/sub_categorias" method="POST">
+	<h3>sub_categorias agregar</h3>
+	<input type="text" name="nombre">
+	<input type="number" name="categorias_id">
+	<input type="submit" name="">
+
+</form>
+
+<form action="/insercion/acciones" method="POST">
+	<h3>acciones agregar</h3>
+	<input type="text" name="titulo" placeholder="titulo">
+	<textarea placeholder="descripcion" name="descripcion"></textarea>
+	<textarea placeholder="contenido" name="contenido"></textarea>
+	<input type="number" name="categorias_id" placeholder="categoria">
+	<input type="number" name="sub_categorias_id" placeholder="sub_categoria">
+	<input type="text" name="link_presentacion" placeholder="url">
+	<input type="datetime-local" name="fecha_inicio" placeholder="Fecha inicio" class="color_naranja">
+	<input type="datetime-local" name="fecha_fin" placeholder="Fecha fin" class="color_naranja">
+	<input type="datetime-local" name="fecha_subido" placeholder="Fecha subido" class="color_naranja">
+	<input type="submit" name="">
+
+</form>
+
+<form action="/insercion/acciones_tecnologias" method="POST">
+	<h3>acciones_tecnologias agregar</h3>
+	<input type="number" name="acciones_id" placeholder="acciones_id">
+	<input type="number" name="tecnologias_id" placeholder="tecnologias_id">
+	<input type="submit" name="">
+
+</form>
+
+<form action="/insercion/delete" method="post">
+	<h4>eliminar</h4>
+	<input type="number" name="id">
+	<input type="text" name="tabla">
+	<input type="submit" name="">
+</form>
