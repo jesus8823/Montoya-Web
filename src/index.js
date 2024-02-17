@@ -20,10 +20,6 @@ app.engine(".hbs",
 
 
 
-
-
-
-
 app.set("view engine", ".hbs")
 
 
@@ -40,6 +36,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(require("./routes/"));
 app.use("/experiencia", require("./routes/experiencia"));
 app.use("/insercion", require("./routes/insercion_datos"));
+app.use("/portafolio", require("./routes/portafolio"));
 
 
 app.listen(app.get("port"),() => {
