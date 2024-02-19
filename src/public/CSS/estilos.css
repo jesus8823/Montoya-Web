@@ -749,7 +749,9 @@ background: #000;
 }
 
 @media only screen and (max-width: 700px) {
-
+	.contenedor_portafolio a{
+	width: 90% ;
+		}
 
 	.contenedor_vector img{
 			width: 130%;
